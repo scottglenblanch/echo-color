@@ -16,7 +16,7 @@ Current support is for bash.
 git clone git@github.com:scottglenblanch/echo-bash.git echo-bash
 chmod -R +x ./echo-bash
 cd ./echo-bash
-echo "export ECHO_COLOR_DIR=$(pwd); source ${ECHO_COLOR_DIR}/bin/echo.color.setup >> ~/.bashrc
+echo "export ECHO_COLOR_DIR=$(pwd); source ${ECHO_COLOR_DIR}/bin/echo.color.setup" >> ~/.bashrc
 source ~/.bashrc
 ```
 
