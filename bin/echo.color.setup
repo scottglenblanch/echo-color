@@ -1,6 +1,4 @@
 #!/bin/bash
 
-# setup environment variables
-source ${ECHO_COLOR_DIR}/envvars/*
 # setup bin commands
 export PATH="${ECHO_COLOR_DIR}/bin":"${PATH}"

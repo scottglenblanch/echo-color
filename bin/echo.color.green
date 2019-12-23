@@ -1,4 +1,4 @@
 #!/bin/bash
 str_to_color="${@}"
 
-echo.color "${ECHO_COLOR_GREEN}" "${str_to_color}"
+echo.color.rgb "0;255;0" "${str_to_color}"

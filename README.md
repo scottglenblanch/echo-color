@@ -33,12 +33,6 @@ source ~/.bashrc
     * output color is green
 * echo.color.blue {{desired output}}
     * output color is blue
-* echo.color.lightblue {{desired output}}
-    * output color is lightblue
-* echo.color.yellow {{desired output}}
-    * output color is yellow
-* echo.color.orange {{desired output}}
-    * output color is orange
 * echo.color
     * command that other commands use
 
