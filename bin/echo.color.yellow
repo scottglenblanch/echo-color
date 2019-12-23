@@ -1,0 +1,4 @@
+#!/bin/bash
+str_to_color="${@}"
+
+echo.color "${COLOR_YELLOW}" "${str_to_color}"
