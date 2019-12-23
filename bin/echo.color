@@ -1,5 +1,6 @@
 #!/bin/bash
 color_to_use="$1"
+color_default="\033[m"
 str_to_color="${@:2}"
 
-echo -e "${color_to_use}${str_to_color}${ECHO_COLOR_DEFAULT}"
+echo -e "${color_to_use}${str_to_color}${color_default}"

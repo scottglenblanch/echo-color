@@ -15,7 +15,7 @@ echo "input blue integer value (0-255)"
 read blue_value
 
 rgb_delimited_by_semicolon="${red_value};${green_value};${blue_value}"
-file_name="${ECHO_COLOR_DIR}/echo.color.${color_name}"
+file_name="${ECHO_COLOR_DIR}/bin/echo.color.${color_name}"
 
 echo "#!/bin/bash
 echo.color.rgb \"${rgb_delimited_by_semicolon}\" \${@}" > "${file_name}"
