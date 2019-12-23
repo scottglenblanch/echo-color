@@ -1,12 +1,4 @@
 #!/bin/bash
-
-script_path="`dirname \"$0\"`"              # relative
-script_path="`( cd \"$script_path\" && pwd )`"  # absolutized and normalized
-
-export ECHO_COLOR_DIR="$(cd ${script_path}; cd ..; pwd)"
-export ECHO_COLOR_BIN_DIR="${ECHO_COLOR_DIR}/bin"
-export ECHO_COLOR_ENVVARS_DIR="${ECHO_COLOR_DIR}/envvars"
-
 export ECHO_COLOR_RED='\033[0;31m'
 export ECHO_COLOR_GREEN='\033[0;32m'
 export ECHO_COLOR_BLUE='\033[0;34m'
