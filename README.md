@@ -1,7 +1,6 @@
 # Echo Color
 
-Echo command to add some color into bash scripts.
-
+Commands in terminal to echo out colored text
 
 ## Support
 
