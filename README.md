@@ -17,27 +17,31 @@ git clone https://github.com/scottglenblanch/echo-color.git echo-color
 chmod -R +x ./echo-color
 cd ./echo-color
 echo "export ECHO_COLOR_DIR=$(pwd);" >> ~/.bashrc
-echo 'source ${ECHO_COLOR_DIR}/bin/.echo.color.rc' >> ~/.bashrc
+echo 'source ${ECHO_COLOR_DIR}/terminal_setup/.echo.color.rc' >> ~/.bashrc
 source ~/.bashrc
 ```
 
 
-## Commands
+## Base Commands
+
 
 * echo.color.rgb "[red:int];[green:int];[blue:int]" [output:string]
     * output color from rgb integers
     * quotes are needed in first input
+* * echo.color
+    * command that echo.color.rgb uses
+
+## Custom Color Commands        
 * echo.color.red [output:string]
     * output color is red
 * echo.color.green {{desired output}}
     * output color is green
 * echo.color.blue {{desired output}}
     * output color is blue
-* echo.color
-    * command that other commands use
+
 
 ## Release History
-* 0.0.1
+* 0.0.2
     * Work in progress
 
 ## Meta

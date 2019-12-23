@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# setup bin commands
+export PATH="${ECHO_COLOR_DIR}/base":"${ECHO_COLOR_DIR}/custom_colors":"${PATH}"
