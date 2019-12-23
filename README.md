@@ -15,7 +15,8 @@ Current support is for bash.
 ```
 git clone git@github.com:scottglenblanch/echo-bash.git echo-bash
 chmod -R +x ./echo-bash
-echo 'source ./echo-bash/bin/echo.color.setup' >> ~/.bashrc
+cd ./echo-bash
+echo 'source $(pwd)/bin/echo.color.setup' >> ~/.bashrc
 source ~/.bashrc
 ```
 
