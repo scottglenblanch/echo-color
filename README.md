@@ -17,8 +17,7 @@ git clone https://github.com/scottglenblanch/echo-color.git echo-color
 chmod -R +x ./echo-color
 cd ./echo-color
 echo "export ECHO_COLOR_DIR=$(pwd);" >> ~/.bashrc
-source ~/.bashrc
-echo "source ${ECHO_COLOR_DIR}/bin/echo.color.setup"
+echo 'source ${ECHO_COLOR_DIR}/bin/echo.color.setup' >> ~/.bashrc
 source ~/.bashrc
 ```
 
@@ -64,4 +63,4 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 5. Create a new Pull Request
 
 ## Special Thanks
-Special Thanks to [@wcspcbmt](https://github.com/wcspcbmt) for teaching me bash. My eyes have been opened to the power of the terminal. 
+Special Thanks to [@wcspcbmt](https://github.com/wcspcbmt) for teaching me bash. My eyes have been opened to the power of the terminal.
