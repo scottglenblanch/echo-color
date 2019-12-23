@@ -20,7 +20,7 @@ source ~/.bashrc
 ```
 
 
-## Usage example
+## Commands
 
 * echo.color.rgb "[red:int];[green:int];[blue:int]" [output:string]
     * output color from rgb integers
@@ -37,8 +37,8 @@ source ~/.bashrc
     * output color is yellow
 * echo.color.orange {{desired output}}
     * output color is orange
-
-* Added in near future
+* echo.color
+    * command that other commands use
 
 ## Release History
 * 0.0.1
