@@ -24,21 +24,23 @@ source ~/.bashrc
 
 ## Base Commands
 
-
-* echo.color.rgb "[red:int];[green:int];[blue:int]" [output:string]
-    * output color from rgb integers
-    * quotes are needed in first input
-* * echo.color
-    * command that echo.color.rgb uses
+```
+echo.color.rgb "[red:int];[green:int];[blue:int]" [input:string]
+```
+```
+echo.color.create
+```
 
 ## Custom Color Commands        
-* echo.color.red [output:string]
-    * output color is red
-* echo.color.green {{desired output}}
-    * output color is green
-* echo.color.blue {{desired output}}
-    * output color is blue
-
+```
+echo.color.red [input:string]
+```
+```
+echo.color.green [input:string]
+```
+```
+echo.color.blue [input:string]
+```
 
 ## Release History
 * 0.0.2
