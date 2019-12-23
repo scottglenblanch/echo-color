@@ -1,18 +1,6 @@
 #!/bin/bash
 
-SCRIPT_PATH="`dirname \"$0\"`"              # relative
-SCRIPT_PATH="`( cd \"$SCRIPT_PATH\" && pwd )`"  # absolutized and normalized
-if [ -z "$SCRIPT_PATH" ] ; then
-  # error; for some reason, the path is not accessible
-  # to the script (e.g. permissions re-evaled after suid)
-  exit 1  # fail
-fi
-
-# setup envvars
-for f in $(ls "${SCRIPT_PATH}/../envvars");
-do
-  source "${SCRIPT_PATH}/../envvars/${f}"
-done
-
-export PATH=${SCRIPT_PATH}:${PATH}
-# setup aliases
+# setup environment variables
+source ${ECHO_COLOR_DIR}/envvars/*
+# setup bin commands
+export PATH="${ECHO_COLOR_DIR}/bin":"${PATH}"
