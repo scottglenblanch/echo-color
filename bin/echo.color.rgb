@@ -3,4 +3,4 @@ rgb_delimited_with_semicolons="$1"
 color_to_use="\033[38;2;${rgb_delimited_with_semicolons}m"
 str_to_color="${@:2}"
 
-echo.color "${color_to_use}${str_to_color}"
+echo.color "${color_to_use}" "${str_to_color}"

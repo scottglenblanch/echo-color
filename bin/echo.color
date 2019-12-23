@@ -2,4 +2,4 @@
 color_to_use="$1"
 str_to_color="${@:2}"
 
-echo -e "${color_to_use}${str_to_color}${COLOR_DEFAULT}"
+echo -e "${color_to_use}${str_to_color}${ECHO_COLOR_DEFAULT}"
