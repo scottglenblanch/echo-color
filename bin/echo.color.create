@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo "Input color name. Only letters, no spaces"
+read color_name
+
+echo $color_name
+
+echo "input red integer value (0-255)"
+read red_value
+
+echo "input green integer value (0-255)"
+read green_value
+
+echo "input blue integer value (0-255)"
+read blue_value
+
+rgb_delimited_by_semicolon="${red_value};${green_value};${blue_value}"
+file_name="${ECHO_COLOR_DIR}/echo.color.${color_name}"
+
+echo "#!/bin/bash
+echo.color.rgb \"${rgb_delimited_by_semicolon}\" \${@}" > "${file_name}"
+
+chmod +x ${file_name}
