@@ -16,11 +16,11 @@ read blue_value
 
 rgb_delimited_by_semicolon="${red_value};${green_value};${blue_value}"
 file_name="echo.color.${color_name}"
-file_path="${ECHO_COLOR_DIR}/custom_color/${file_name}"
+file_path="${ECHO_COLOR_DIR}/src/custom_colors/${file_name}"
 
 echo "#!/bin/bash
-echo.color.rgb \"${rgb_delimited_by_semicolon}\" \${@}" > "${file_name}"
+echo.color.rgb \"${rgb_delimited_by_semicolon}\" \${@}" > "${file_path}"
 
-chmod +x ${file_name}
+chmod +x ${file_path}
 
 echo "You have command ${file_name}, which output commands ${color_name} with red ${red_value}, green ${green_value}, blue ${blue_value}"
