@@ -19,7 +19,7 @@ file_name="echo.color.${color_name}"
 file_path="${ECHO_COLOR_DIR}/src/custom_colors/${file_name}"
 
 echo "#!/bin/bash
-echo.color.rgb \"${rgb_delimited_by_semicolon}\" \${@}" > "${file_path}"
+echo.color.rgb \"${rgb_delimited_by_semicolon}\" \"\${@}\"" > "${file_path}"
 
 chmod +x ${file_path}
 
