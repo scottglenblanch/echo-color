@@ -13,10 +13,8 @@ Current support is for bash.
 
 ```
 git clone https://github.com/scottglenblanch/echo-color.git echo-color
-chmod -R +x ./echo-color
-cd ./echo-color
-echo "export ECHO_COLOR_DIR=$(pwd)" >> ~/.bashrc
-echo 'source ${ECHO_COLOR_DIR}/src/terminal_setup/.echo.color.rc' >> ~/.bashrc
+cd echo-color
+./setup/init
 source ~/.bashrc
 ```
 
