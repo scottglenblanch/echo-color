@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# ==============
+# Optional Parameters
+# * --file
+#   * file location that 'write_to_file' writes to
+# ==============
+
+
 SCRIPT_PATH=""
 ECHO_COLOR_DIR=""
 FILE=""
