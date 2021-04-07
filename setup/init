@@ -1,0 +1,38 @@
+#!/bin/bash
+
+SCRIPT_PATH=""
+ECHO_COLOR_DIR=""
+FILE=""
+
+set_file_var() {
+
+
+    source /dev/stdin <<< "$(curl https://raw.githubusercontent.com/scottglenblanch/bash-argument-parser/main/src/arg-parser.sh)" $@
+
+    if [ -z "${FILE}" ];
+    then    
+        FILE="${HOME}/.bashrc"
+    fi
+
+}
+
+set_vars() {
+
+    set_file_var "$@"
+
+    SCRIPT_PATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+    ECHO_COLOR_DIR="$( cd "${SCRIPT_PATH}"; cd .. )"
+
+}
+
+run() {
+    set_vars "$@"
+    write_to_file
+}
+
+write_to_file() {
+    echo "export ECHO_COLOR_DIR=$(pwd)" >> "${FILE}"
+    echo 'source ${ECHO_COLOR_DIR}/src/terminal_setup/.echo.color.rc' >> ${FILE}
+}
+
+run "$@"
