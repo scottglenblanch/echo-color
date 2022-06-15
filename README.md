@@ -12,7 +12,7 @@ Current support is for bash.
 #### Unix Based
 
 ```
-git clone https://github.com/scottglenblanch/echo-color.git echo-color
+git clone git@github.com:scottglenblanch/echo-color.git echo-color
 cd echo-color
 ./setup/init
 source ~/.bashrc
