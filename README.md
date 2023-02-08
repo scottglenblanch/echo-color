@@ -12,9 +12,9 @@ Current support is for bash.
 #### Unix Based
 
 ```
-git clone git@github.com:scottglenblanch/echo-color.git echo-color
-cd echo-color
-./setup/init
+git clone git@github.com:scottglenblanch/echo-color.git echo-color && \
+cd echo-color && \
+./setup/init && \
 source ~/.bashrc
 ```
 
